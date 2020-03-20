@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WeatherGift3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="asW-sW-do0">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="tBg-xS-jJJ"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="Edit" id="vF0-sN-X7I">
+                                        <connections>
+                                            <action selector="editBarButtonPressed:" destination="BYZ-38-t0r" id="w2m-rb-JhB"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Kh2-hC-tXg"/>
+                                    <barButtonItem title="Add Location" id="bMR-Ty-blr">
+                                        <connections>
+                                            <action selector="addBarButtonPressed:" destination="BYZ-38-t0r" id="uBN-Zh-DNi"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Yjj-gk-X1y">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="NTg-5I-fHY">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NTg-5I-fHY" id="eHn-iN-Sot">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="asW-sW-do0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Fwc-EY-zDU"/>
+                            <constraint firstItem="asW-sW-do0" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="K6t-4f-AsK"/>
+                            <constraint firstItem="asW-sW-do0" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="M0g-1r-kU3"/>
+                            <constraint firstItem="Yjj-gk-X1y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Rss-st-ZZB"/>
+                            <constraint firstItem="asW-sW-do0" firstAttribute="top" secondItem="Yjj-gk-X1y" secondAttribute="bottom" id="VxS-zk-BNV"/>
+                            <constraint firstItem="Yjj-gk-X1y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="iWc-Xa-uPi"/>
+                            <constraint firstItem="Yjj-gk-X1y" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ucJ-e9-WPS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="addBarButton" destination="bMR-Ty-blr" id="WF6-tE-RDX"/>
+                        <outlet property="editBarButton" destination="vF0-sN-X7I" id="h5n-6M-FVx"/>
+                        <outlet property="tableView" destination="Yjj-gk-X1y" id="ca2-F5-akM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.75" y="78.16901408450704"/>
+        </scene>
+    </scenes>
+</document>
