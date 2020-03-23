@@ -52,7 +52,7 @@ class LocationDetailViewController: UIViewController {
             DispatchQueue.main.async {
                 self.dateLabel.text = weatherDetail.timezone
             self.locationLabel.text = weatherDetail.name
-                self.tempteratureLabel.text = "\(weatherDetail.temperature)"
+                self.tempteratureLabel.text = "\(weatherDetail.temperature)°"
                 self.descriptionLabel.text = weatherDetail.summary
                 self.imageView.image = UIImage(named: weatherDetail.dailyIcon)
         }

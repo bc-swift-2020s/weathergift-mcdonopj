@@ -67,7 +67,7 @@ class WeatherDetail: WeatherLocation {
           } catch {
               print("JSON ERROR \(error.localizedDescription)")
           }
-     
+     completed()
       }
        task.resume()
   
