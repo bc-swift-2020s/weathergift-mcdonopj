@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/annmcdonough/Desktop/WeatherGift3Folder/WeatherGift3/HourlyCollectionViewCell.swift">
+   </FileRef>
+   <FileRef
       location = "group:WeatherGift3.xcodeproj">
    </FileRef>
    <FileRef
